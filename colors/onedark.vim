@@ -129,6 +129,10 @@ let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16": "7" }
 let s:black = { "gui": "#282C34", "cterm": "235", "cterm16": "0" }
 let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": s:black.cterm16 } " Black out selected text in 16-color visual mode
 
+" Added Colors
+let s:gold = { "gui": "#A49F33", "cterm": "142", "cterm16": "5" } " GUI is the only one I care about.
+let s:nblue = { "gui": "#0060BC", "cterm": "39", "cterm16": "4" }
+
 let s:comment_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "15" }
 let s:gutter_fg_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "15" }
 let s:cursor_grey = { "gui": "#2C323C", "cterm": "236", "cterm16": "8" }
@@ -157,16 +161,16 @@ call s:h("Label", { "fg": s:purple }) " case, default, etc.
 call s:h("Operator", { "fg": s:purple }) " sizeof", "+", "*", etc.
 call s:h("Keyword", { "fg": s:red }) " any other keyword
 call s:h("Exception", { "fg": s:purple }) " try, catch, throw
-call s:h("PreProc", { "fg": s:yellow }) " generic Preprocessor
-call s:h("Include", { "fg": s:blue }) " preprocessor #include
-call s:h("Define", { "fg": s:purple }) " preprocessor #define
-call s:h("Macro", { "fg": s:purple }) " same as Define
-call s:h("PreCondit", { "fg": s:yellow }) " preprocessor #if, #else, #endif, etc.
+call s:h("PreProc", { "fg": s:gold }) " generic Preprocessor
+call s:h("Include", { "fg": s:gold }) " preprocessor #include
+call s:h("Define", { "fg": s:gold }) " preprocessor #define
+call s:h("Macro", { "fg": s:gold }) " same as Define
+call s:h("PreCondit", { "fg": s:gold }) " preprocessor #if, #else, #endif, etc.
 call s:h("Type", { "fg": s:yellow }) " int, long, char, etc.
 call s:h("StorageClass", { "fg": s:yellow }) " static, register, volatile, etc.
 call s:h("Structure", { "fg": s:yellow }) " struct, union, enum, etc.
 call s:h("Typedef", { "fg": s:yellow }) " A typedef
-call s:h("Special", { "fg": s:blue }) " any special symbol
+call s:h("Special", { "fg": s:nblue }) " any special symbol
 call s:h("SpecialChar", {}) " special character in a constant
 call s:h("Tag", {}) " you can use CTRL-] on this
 call s:h("Delimiter", {}) " character that needs attention
