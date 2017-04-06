@@ -132,6 +132,7 @@ let s:visual_black = { "gui": "NONE", "cterm": "NONE", "cterm16": s:black.cterm1
 " Added Colors
 let s:gold = { "gui": "#A49F33", "cterm": "142", "cterm16": "5" } " GUI is the only one I care about.
 let s:nblue = { "gui": "#0060BC", "cterm": "39", "cterm16": "4" }
+let s:orange = { "gui": "#d5650a", "cterm": "213", "cterm16": "1" }
 
 let s:comment_grey = { "gui": "#5C6370", "cterm": "59", "cterm16": "15" }
 let s:gutter_fg_grey = { "gui": "#636D83", "cterm": "238", "cterm16": "15" }
@@ -155,11 +156,11 @@ call s:h("Float", { "fg": s:dark_yellow }) " a floating point constant: 2.3e10
 call s:h("Identifier", { "fg": s:red }) " any variable name
 call s:h("Function", { "fg": s:blue }) " function name (also: methods for classes)
 call s:h("Statement", { "fg": s:purple }) " any statement
-call s:h("Conditional", { "fg": s:purple }) " if, then, else, endif, switch, etc.
-call s:h("Repeat", { "fg": s:purple }) " for, do, while, etc.
-call s:h("Label", { "fg": s:purple }) " case, default, etc.
+call s:h("Conditional", { "fg": s:orange }) " if, then, else, endif, switch, etc.
+call s:h("Repeat", { "fg": s:orange }) " for, do, while, etc.
+call s:h("Label", { "fg": s:orange }) " case, default, etc.
 call s:h("Operator", { "fg": s:purple }) " sizeof", "+", "*", etc.
-call s:h("Keyword", { "fg": s:red }) " any other keyword
+call s:h("Keyword", { "fg": s:nblue }) " any other keyword
 call s:h("Exception", { "fg": s:purple }) " try, catch, throw
 call s:h("PreProc", { "fg": s:gold }) " generic Preprocessor
 call s:h("Include", { "fg": s:gold }) " preprocessor #include
