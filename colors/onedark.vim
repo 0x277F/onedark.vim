@@ -155,7 +155,7 @@ call s:h("Boolean", { "fg": s:dark_yellow }) " a boolean constant: TRUE, false
 call s:h("Float", { "fg": s:dark_yellow }) " a floating point constant: 2.3e10
 call s:h("Identifier", { "fg": s:red }) " any variable name
 call s:h("Function", { "fg": s:blue }) " function name (also: methods for classes)
-call s:h("Statement", { "fg": s:purple }) " any statement
+call s:h("Statement", { "fg": s:orange }) " any statement
 call s:h("Conditional", { "fg": s:orange }) " if, then, else, endif, switch, etc.
 call s:h("Repeat", { "fg": s:orange }) " for, do, while, etc.
 call s:h("Label", { "fg": s:orange }) " case, default, etc.
